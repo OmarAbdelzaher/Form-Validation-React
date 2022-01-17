@@ -1,3 +1,82 @@
+# Log In and Registration Forms Validation using React
+
+## Introduction
+
+- This repository has forms validation for log in and registration forms that will be inserted into wider React projects in the future
+
+- The uploaded files / folders are missing node_modules folder which can be created locally using `npm init` in the app directory
+
+## Screenshots for Log In Form validation
+
+### - Empty Log In Forms
+
+  ![login](images/Login.png)
+
+### - Email Validation for minimum characters
+
+  ![login](images/LogEmail.png)
+
+### - Email Validation for having @ and .com, aslo Password Validation for minimum characters
+
+  ![login](images/LogEmPass.png)
+
+### - Valid Data Entry for Log In
+
+  ![login](images/LogValid.png)
+
+## Screenshots for Registration Form validation
+
+### - Empty Registration Form
+
+  ![Registration](images/Registration.png)
+
+### - Errors that can be shown to user at validation
+
+1) The Name field must be at least 3 characters
+
+2) The Email field must contain @ and .com
+
+3) The User Name field must contain no spaces
+
+4) The Password field must be at least 8 characters
+
+5) The Confirm Password field must match the Password field
+
+6) The Eye icon to show and hide the password on Click
+
+  ![Registration](images/RegErrors.png)
+
+### - Valid Data Entry for Registration
+
+  ![Registration](images/RegValid.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
