@@ -31,8 +31,9 @@ export default function RegisterForm() {
     //Regular expression for password to contain at least one lowercase , one uppercase , at least one digit and special character
     const passRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
 
-    //Regular expression for email to contain @ and .com 
-    const emailRegex = /^[a-zA-Z0-9]+@[a-zA-Z]+.com$/;
+    //Regular expression for email to contain @ and .com
+    // const emailRegex = /^[a-zA-Z0-9]+@[a-zA-Z]+.com$/;
+    const emailRegex = /^\b[A-Z][A-Z 0-9._%-]+@[A-Z0-9]+\.[A-Z]{2,4}\b$/i;
 
     //Change Data function on Click 
     const changeData = (e) => {
@@ -58,7 +59,7 @@ export default function RegisterForm() {
                 : e.target.value.length < 3
                 ? "Minimum length is 3 characters"
                 : RegisterData.isvalid == false
-                ? "Invalid Email"
+                ? "Invalid Email : must contain @ and .com"
                 : null,
         });
         } 
